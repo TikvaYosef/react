@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="title"></div>
+
+
+
+    <script type="text/babel">
+
+        const title = document.getElementById("title")
+        function HelloWold() {
+            return <h1> HELLO WORLD </h1>
+
+        }
+        function Hello() {
+            return <article>HELLO <Myname /></article>
+        }
+        function Myname(prop) {
+            return <div><h1> TIKVA</h1>
+            <h1> {prop.name} </h1>
+            </div>
+        }
+        function App() {
+            return <h1> < Myname name = "yafit" />  </h1>
+        }
+
+        function Books() {
+            const Book = {
+                name: "bookA",
+                paegs: 230,
+                price: 180,
+
+            }
+            const Book1 = {
+                name: "bookB",
+                paegs: 500,
+                price: 200,
+            }
+            const Book2 = {
+                name: "bookC",
+                paegs: 100,
+                price: 150,
+            }
+            return <p>{Book.name},{Book.paegs},{Book.price} <br></br> {Book1.name},{Book1.paegs},{Book1.price} <br></br> {Book2.name},{Book2.paegs},{Book2.price} </p>
+
+        }
+
+
+        ReactDOM.render(
+
+            <App/>       
+           , title
+        )
+
+    </script>
+
+
+
+const name = " Amir"
+const name2 = "Tikva"
+
+
+ function callName(){
+
+  console.log(name);
+  setTimeout(() => {console.log("this is the delay message")}, 5000);
+   console.log(name2);
+   console.log(name);
+   console.log(name2);
+   setTimeout(() => {console.log("this is the 2 delay message")}, 1000);
+   console.log(name);
+   
+const name = " Amir"
+const name2 = "Tikva"
+
+
+ function callName(){
+
+  console.log(name);
+  setTimeout(() => {console.log("this is the delay message")}, 5000);
+   console.log(name2);
+   console.log(name);
+   console.log(name2);
+   setTimeout(() => {console.log("this is the 2 delay message")}, 1000);
+   console.log(name);
+   console.log(name);
+   setTimeout(() => {console.log("this is the 3 delay message")}, 0);
+
+ }
+   console.log(name);
+   setTimeout(() => {console.log("this is the 3 delay message")}, 3000);
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</body>
+
+</html>
