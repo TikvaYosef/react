@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <div id="myDiv"></div>
+
+
+
+    <script type="text/babel">
+
+        const title = document.getElementById("myDiv")
+
+        function HelloWold() {
+            return <h1> HELLO </h1>
+        }
+        function Car() {
+            const Car = {
+                company: "mazda",
+                color: "red",
+                samak: 18000,
+            }
+            return <p>{Car.company} {Car.color} {Car.samak}</p>
+
+        }
+
+        ReactDOM.render(
+
+            < HelloWold />,
+          <p>  <Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/></p>
+            , title
+        )
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</body>
+
+</html>
