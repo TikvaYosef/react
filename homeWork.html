@@ -26,7 +26,8 @@
         const title = document.getElementById("myDiv")
 
         function HelloWold() {
-            return <h1> HELLO </h1>
+
+            return <section> <h1> HELLO </h1> ,<MyName /> </section>
         }
         function Car() {
             const Car = {
@@ -37,11 +38,46 @@
             return <p>{Car.company} {Car.color} {Car.samak}</p>
 
         }
+        function MyName() {
+            return <h1> Tikva Yosef </h1>
+        }
+
+        function Header() {
+            return <h1> Header </h1>
+        }
+        function Main() {
+            return <h1> Main </h1>
+        }
+        function Footer() {
+            return <h1>  Footer </h1>
+        }
+
+        function PrintProp(prop) {
+            return <section> <h1>  hello {prop.name} </h1> , <h1>  hello {prop.name} </h1>, <h1>  hello {prop.name} </h1> ,<h1>  hello {prop.name} </h1>, <h1>  hello {prop.name} </h1>, <h1>  hello {prop.name} </h1>, <h1>  hello {prop.name} </h1>, <h1>  hello {prop.name} </h1> ,<h1>  hello {prop.name} </h1> ,<h1>  hello {prop.name} </h1> </section>
+        }
+        function PrintProp2(prop) {
+            return <section><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article> <article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article><article> <h1>{prop.name}</h1> <h1> {prop.age} </h1></article> </section>
+        }
+        function PrintProp3(prop) {
+            return <section> <img src={prop.src1} /> <img src={prop.src2} /> <img src={prop.src3} /> </section>
+        }
 
         ReactDOM.render(
 
-            // < HelloWold />,
-          <p>  <Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/></p>
+            // < HelloWold />
+            //<p>  <Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/>,<Car/></p>
+            //  < MyName />
+            //     <section>
+            //     < Header />,
+            //     < Main />,
+            //     < Footer />
+            //    </section>
+
+
+            // < PrintProp name="tikva"  />
+            // <PrintProp2 name = "Tikva" age = "25"/>
+            <PrintProp3 src1="https://media.istockphoto.com/photos/british-shorthair-cat-wakes-up-on-the-table-picture-id517281333?b=1&k=20&m=517281333&s=170667a&w=0&h=PHEJKbJICe0lAbeXWUgRZHxaY0a2OXVBROuswf2wanI=" src2 = "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg" src3 = "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492__340.jpg" />
+
             , title
         )
 
